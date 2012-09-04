@@ -24,10 +24,15 @@ gem 'jquery-rails'
 
 group :development, :test do
    gem 'rspec-rails', '2.11.0'
+   gem 'guard-rspec'
+   gem 'spork'
 end
 
 group :test do
    gem 'capybara'
+   gem 'rb-fsevent' 
+   gem 'win32console', :platform => [:mswin, :mingw]
+   gem 'ruby_gntp'
 end   
 
 # To use ActiveModel has_secure_password
